@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./css/skeleton.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <!-- <img src="./img/logo.png" width="80px" style="margin-top:25px"> -->
+          </div>
+          <div class="two columns u-pull-right">
+            <ul>
+              <li class="submenu">
+                <img src="./img/cart.png" id="img-cart" width="50px" />
+                <div id="shopping-cart">
+                  <table id="cart-content" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+
+                  <a href="#" id="clear-cart" class="button u-full-width"
+                    >Clear Cart</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="./img/Nikeshoes/slide1.jpeg"
+          style="width: 100%; height: 550px"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="./img/Nikeshoes/slide10.jpg"
+          style="width: 100%; height: 550px"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          src="./img/Nikeshoes/slide11.jpeg"
+          style="width: 100%; height: 550px"
+        />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!-- responsive grid -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div id="courses-list" class="container">
+      <h1 id="heading" class="heading">NIKE YOUR CONNECTION</h1>
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img
+              src="./img/Nikeshoes/20200605-nike-09.jpeg"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Nike Air Force 1 '07</h4>
+              <p class="price">$60 <span class="u-pull-right">$50</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="1"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img
+              src="./img/Nikeshoes/20200622-nike-05.jpeg"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Nike Air Force 1 '07 LV8</h4>
+              <p class="price">$80 <span class="u-pull-right">$57</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="2"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img
+              src="./img/Nikeshoes/20201002-trainers-03.jpeg"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Nike Air Force 1 '07 LV8</h4>
+              <p class="price">$90 <span class="u-pull-right">$60</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="3"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img
+              src="./img/Nikeshoes/24SNEAKERCOLORS-nike-volt-mobileMasterAt3x.jpeg"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Nike Air Force 1 '07</h4>
+              <p class="price">$50 <span class="u-pull-right">$29</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="4"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img
+              src="./img/Nikeshoes/Nike-Air-Zoom-Terra-Kiger-7-shoe.jpeg"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Nike Air Force 1 '07 LX</h4>
+              <p class="price">$79 <span class="u-pull-right">$70</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="5"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img
+              src="./img/Nikeshoes/jordan-melo-m12-555088_062_a_prem-e1575044740922.jpeg"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Nike Air Max 2021</h4>
+              <p class="price">$50 <span class="u-pull-right">$40</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="6"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img
+              src="./img/Nikeshoes/best-Nike-shoes-4.jpeg"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Nike Waffle One Crater</h4>
+              <p class="price">$60 <span class="u-pull-right">$45</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="7"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img
+              src="./img/Nikeshoes/best-Nike-shoes-11.jpeg"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Nike SB Zoom Blazer Mid Premium</h4>
+              <p class="price">$65 <span class="u-pull-right">$43</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="8"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img
+              src="./img/Nikeshoes/best-nike-sneakers-1980s-main.jpeg"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Nike Air More Uptempo ’96</h4>
+              <p class="price">$50 <span class="u-pull-right">$38</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="9"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img
+              src="./img/Nikeshoes/omgtnylpi4lukt823fdb.jpeg"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Kyrie 7 EP</h4>
+              <p class="price">$45 <span class="u-pull-right">$40</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="10"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img
+              src="./img/Nikeshoes/20201002-trainers-03.jpeg"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Zion 1 “ZNA”</h4>
+              <p class="price">$78 <span class="u-pull-right">$60</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="11"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img
+              src="./img/Nikeshoes/Nike-Air-Zoom-Terra-Kiger-7-shoe.jpeg"
+              class="course-image u-full-width"
+            />
+            <div class="info-card">
+              <h4>Giannis Immortality “Force Field”</h4>
+              <p class="price">$55 <span class="u-pull-right">$45</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input add-to-cart"
+                data-id="12"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
